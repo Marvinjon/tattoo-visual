@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 0, 0, 0;
+  --background-end-rgb: 10, 10, 30;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      rgb(var(--background-start-rgb)),
+      rgb(var(--background-end-rgb))
+    )
+    fixed;
+}
+
+/* Custom classes */
+.upload-btn {
+  @apply px-4 py-2 bg-purple-600 hover:bg-purple-700 text-white rounded-lg transition-colors;
+}
+
+.card {
+  @apply bg-gray-800 rounded-xl shadow-xl overflow-hidden;
+}
+
+.canvas-container {
+  @apply w-full h-[70vh] md:h-[80vh] relative;
+}
+
+.controls {
+  @apply w-full p-4 flex flex-col md:flex-row gap-4 justify-between items-center;
+} 

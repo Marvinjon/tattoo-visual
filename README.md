@@ -1,58 +1,38 @@
 # Tattoo Visualizer
 
-A web application that allows users to visualize tattoos on a 3D human model before getting them in real life.
+A web application that allows users to visualize tattoos on a 3D human model. Users can upload images of tattoos and see how they would look on the human model.
 
 ## Features
 
-- Upload tattoo images
-- Place tattoos on a 3D human model
-- Adjust tattoo size and rotation
-- Interactive 3D model viewing (rotate, zoom, pan)
-- Responsive design for both mobile and desktop
+- Upload tattoo images (drag & drop or file browser)
+- Apply tattoos to 3D human model
+- Rotate model to view from different angles
+- Mobile and desktop responsive design
+- Dark mode UI
 
 ## Technologies Used
 
-- React with TypeScript
-- Three.js for 3D rendering
-- React Three Fiber for React integration with Three.js
-- React Three Drei for helpful 3D components
+- Next.js
+- Three.js with React Three Fiber/Drei
+- TypeScript
+- Tailwind CSS
 
 ## Getting Started
 
-### Prerequisites
-
-- Node.js (v14 or higher)
-- npm or yarn
-
-### Installation
-
 1. Clone the repository
-```
-git clone https://github.com/Marvinjon/tattoo-visual.git
-cd tattoo-visual
-```
-
-2. Install dependencies
-```
-npm install
-```
-
-3. Start the development server
-```
-npm run dev
-```
-
-4. Open your browser and navigate to `http://localhost:5173`
+2. Install dependencies:
+   ```
+   npm install
+   ```
+3. Run the development server:
+   ```
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## Usage
 
-1. Upload a tattoo image using the "Upload Tattoo Image" button
-2. Adjust the size and rotation of the tattoo using the sliders
-3. Interact with the 3D model:
-   - Rotate: Click/touch and drag
-   - Zoom: Scroll/pinch
-   - Pan: Right-click/two-finger touch and drag
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
+1. Upload a tattoo image using the upload area
+2. The tattoo will be applied to the 3D model
+3. Use the controls to rotate the model and view the tattoo from different angles
+4. Upload multiple tattoos and switch between them 
